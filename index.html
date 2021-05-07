@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/contact1 - Copy.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="icon" href="img/logo-02-02.png" type="image/icon type">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -61,11 +62,11 @@
 
 
     <div class="work-wrapper" id="work">
-      <div class="work-title">
+      <div class="work-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <h1>My Work</h1>
       </div>
-      <div class="circle-row code aos-init aos-animate" data-aos="fade-up">
-        <div class="circle-col">
+      <div class="circle-row">
+        <div class="circle-col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           <a href="work.html#inza">
           <div class="something">
             <div class="img-box">
@@ -76,7 +77,7 @@
           <h2 class="project-title">INZA Design</h2>
           <p class="project-description">A commercial website for the design company, INZA Designs. The website is written in pure HTML, CSS and JS and was released in 2020. Click  <a href="https://inzadesign.com/" style="color: #E71E54; text-decoration: none;">here </a>to check them out!</p>
         </div>
-        <div class="circle-col">
+        <div class="circle-col"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           <a href="work.html#chat">
           <div class="something">
             <div class="img-box">
@@ -87,7 +88,7 @@
           <h2 class="project-title">Web App</h2>
           <p class="project-description">A recently created demo Web App using React JS as a mini project. This was a precursor to an upcoming project which I am currently working on. Stay tuned!</p>
         </div>
-        <div class="circle-col">
+        <div class="circle-col"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           <a href="work.html#scan">
           <div class="something">
             <div class="img-box">
@@ -95,8 +96,8 @@
             </div>
           </div>
           </a>
-          <h2 class="project-title">scanner</h2>
-          <p class="project-description">A python project in collaboration with <a href="https://www.linkedin.com/in/surabhi-chandane-b6b2291a9/" style="color: #E71E54; text-decoration: none;">Surabhi Chandane. </a>The app serves the basic function of scanning pages and QR and barcodes. It also generates QR codes with user inputs.</p>
+          <h2 class="project-title">Scanner</h2>
+          <p class="project-description">A python project in collaboration with <a href="https://www.linkedin.com/in/surabhi-chandane-b6b2291a9/" style="color: #E71E54; text-decoration: none;">Surabhi Chandane. </a>The app serves the basic function of scanning pages, QR codes and barcodes. It also generates QR codes with user inputs.</p>
         </div>
       </div>
       <div class="work-title" style="padding-top: 0px">
@@ -104,12 +105,13 @@
       </div>
     </div>
 
+
     <div class="contact" id="contact">
-      <div class="contact-title">
+      <div class="contact-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <h1>contact me</h1>
       </div>
     <div class="container">
-      <div class="form">
+      <div class="form" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="contact-info">
           <h3 class="title">Let's get in touch</h3>
           <p class="text">
@@ -280,6 +282,12 @@
     load.style.display = 'none';
     body.style.opacity = 1;
   }
+</script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 
   </body>

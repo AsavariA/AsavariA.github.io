@@ -7,16 +7,22 @@
     <link rel="stylesheet" href="css/work.css">
     <link rel="stylesheet" href="css/nav-bar.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="icon" href="img/logo-02-02.png" type="image/icon type">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
   </head>
-  <body onload="document.body.style.opacity='1'">
+  <body  onload="loadfun()">
 
+    <div class="loading" id="loading">
+      <h1>Sit tight, we're loading...</h1>
+    </div>
 
     <a href="#" id="scroll" style="display: none;"><span></span></a>
+
     <nav class="nav-down">
       <div class="logo">
         <a href="index.html" style="text-decoration:none; color:black;">
@@ -42,7 +48,7 @@
 <div class="wrapper">
 <div class="project" id="inza">
   <h3>INZA Design</h3>
-  <p>Website for the brand 'Inza Design'<br>This website was written in purely HTML5, CSS and JS. <br>Check them out <a href="https://inzadesign.com/" style="color: #E71E54; text-decoration: none;">here!</a> </p>
+  <p>Website for the brand 'Inza Design'<br>This website was written purely in HTML5, CSS and JS. <br>Check them out <a href="https://inzadesign.com/" style="color: #E71E54; text-decoration: none;">here!</a> </p>
   <div class="work-row">
     <div class="work-col">
       <div class="work-img">
@@ -118,11 +124,11 @@
 <div class="project">
   <h3>Mini Projects</h3>
   <ul style="padding:10px 30px;">
-    <li>
+    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
       <p style="font-weight:bold;">Google Meet Bot</p>
       <p>Bot which joins G-Meets with mic and camera off making lives of students like you and me easier ;)<br>Created in python.</p>
     </li>
-    <li>
+    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
       <p style="font-weight:bold;">Music Player GUI</p>
       <p>Using Tkinter package in python</p>
     </li>
@@ -132,27 +138,27 @@
 <div class="project">
   <h3>Courses and Certifications</h3>
   <ul class="prolist">
-    <li>
+    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
       <p style="font-weight:bold;"><a style="text-decoration:none; color:black;" href="https://coursera.org/share/c7baf48898713f2f7d4a33227d9177f6">Python for Everybody (specialization)</a></p>
       <p>Coursera</p>
     </li>
-    <li>
+    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
       <p style="font-weight:bold;"><a style="text-decoration:none; color:black;" href="https://coursera.org/share/12a354362a15205fc5662ff1101a09b4">Inspiring and Motivating Individuals</a></p>
       <p>Coursera</p>
     </li>
-    <li>
+    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
       <p style="font-weight:bold;"><a style="text-decoration:none; color:black;" href="https://coursera.org/share/921cfdb0a2045e78df17aee0ebc97697">Leading Teams</a></p>
       <p>Coursera</p>
     </li>
-    <li>
+    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
       <p style="font-weight:bold;"><a style="text-decoration:none; color:black;" href="https://coursera.org/share/34a449f7b81aef89f472e3c82f09b289">Introduction to Genomic Technologies</a></p>
       <p>Coursera</p>
     </li>
-    <li>
+    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
       <p style="font-weight:bold;"><a style="text-decoration:none; color:black;" href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=097f01d0-205e-4d76-ba79-006163e01fa2">Matlab Onramp</a></p>
       <p>Math Works</p>
     </li>
-    <li>
+    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
       <p style="font-weight:bold;"><a style="text-decoration:none; color:black;" href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=a6d602b5-fc62-4b3b-8966-9442c67ebbf0">Simulink Onramp</a></p>
       <p>Math Works</p>
     </li>
@@ -221,6 +227,19 @@
 
 </script>
 
+<script>
+  var load = document.getElementById("loading");
+  var body = document.body;
+  function loadfun(){
+    load.style.display = 'none';
+    body.style.opacity = 1;
+  }
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
   </body>
 </html>
