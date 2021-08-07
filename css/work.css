@@ -3,8 +3,6 @@ body{
   margin:0;
   font-family: 'Poppins', sans-serif;
   background-color: #FEFEFE;
-  opacity: 0;
-  transition: opacity 1s;
 }
 
 html,body{
@@ -18,15 +16,15 @@ html,body{
   animation-duration: 2s;
 }
 
-@keyframes example {
-  0% { transform: translateY(5%); }
+/* @keyframes example {
+  0% { transform: translateY(10%); }
   100% { transform: translateY(0%); }
 }
 
 @keyframes title {
   0% { transform: translateX(-10%); }
   100% { transform: translateX(0%); }
-}
+} */
 
 .project-title{
   padding: 20px 0px;

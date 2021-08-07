@@ -10,8 +10,6 @@ body{
   margin:0;
   font-family: 'Poppins', sans-serif;
   background-color: #FEFEFE;
-  opacity: 0;
-  transition: opacity 1s;
 }
 
 .upper-row,.lower-row,.timeline,.skills{
@@ -19,7 +17,7 @@ body{
   animation-duration: 2s;
 }
 
-@keyframes example {
+/* @keyframes example {
   0% { transform: translateY(10%); }
   100% { transform: translateY(0%); }
 }
@@ -27,7 +25,7 @@ body{
 @keyframes title {
   0% { transform: translateX(-10%); }
   100% { transform: translateX(0%); }
-}
+} */
 
 h2{
   color: #FFA43D;
